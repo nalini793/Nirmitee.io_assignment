@@ -8,10 +8,10 @@ Below are the given requirements:
 
 ### `Where,`
 
- User can create a post and comment on it
- User can comment on a comment as well
- User can edit and delete the post
- User can edit and delete the comment
+* User can create a post and comment on it
+* User can comment on a comment as well
+* User can edit and delete the post
+* User can edit and delete the comment
 
 
 ### `React and Redux is must.`
