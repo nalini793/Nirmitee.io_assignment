@@ -1,6 +1,6 @@
 # Pre-Interview Task for React.js Developer
 
-Check out the hosted project [here](https://timely-bonbon-29cb3f.netlify.app/).
+Check out the hosted project [here](https://timely-caramel-7a7a58.netlify.app/).
 
 ## Create UI for Post App using ReactJS
 
