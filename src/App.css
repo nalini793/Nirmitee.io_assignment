@@ -1,38 +1,232 @@
 .App {
   text-align: center;
+  position: relative;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.modal_wrapper{
+  position: absolute;
+  left: 50%;
+  width: 600px;
+  transform: translateX(-50%);
+  z-index: 3;
+  margin-top:-3rem ;
+  padding-bottom:1rem;
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.modal_container{
+ width: 100%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.closebtn{
+  font-size: 30px;
+  position: absolute;
+  right: 6px;
+  top: 6px;
+}
+*{
+  box-sizing: border-box;
+}
+.commentsWrapper{
+    width: 100%;
+    z-index: 3;
+    padding-bottom: 1rem;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.commentWrapper{
+  width: 100%;
+}
+.labelWrapper{
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+}
+label{
+width: 50px;
+margin: 5px;
+}
+input{
+  margin: 5px;
+  width: 80%;
+}
+.formclass{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.create-post{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.post-input{
+  width: 500px;
+  height: 100px;
+  outline: none;
+border: 1px solid lightgray;
+  border-radius: 5px;
+}
+.withComments{
+border: 1px solid lightgray;
+display: flex;
+flex-direction: column;
+  text-align: left;
+  padding: 1rem;
+  width: 80%;
+  margin-bottom: 1rem;
+}
+.singleComment{
+  padding-left: 1rem;
+  padding-top: 1rem;
+  width: 100%;
+}
+.singlePost{
+  position: relative;
+  display: flex;
+  padding: 0;
+  margin: 5px;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.post_grid{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.singleAuthor{
+  display: flex;
+  color: gray;
+}
+.singleTitle,.singleAuthor{
+  padding: 0;
+    margin: 1px;
+}
+.singleBody{
+  padding: 4px;
+    margin: 8px;
+}
+.singlePostWrap{
+margin: .5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn{
+  padding: 4px;
+  margin: 4px;
+  width: 80px;
+  border: none;
+  border-radius: 5px;
+  background-color: lightblue;
+}
+.btn_container{
+  display: flex;
+
+}
+.postbtn_container{
+  display: flex;
+  position: absolute;
+  right: 5px;
+  bottom: 2px;
+
+}
+.postbtn_container .btn{
+  width: fit-content;
+  height: 30px;
+  padding: 5px;
+  margin-right: 6px;
+}
+.btn:hover{
+  cursor: pointer;
+}
+.commentToggle{
+  position: absolute;
+  left: 4px;
+  bottom: 2px;
+  font-style: italic;
+  text-shadow: 3px 3px 10px rgba(0,0,0,0.6);
+  border-radius: 10px;
+  width: 120px;
+  height: 25px;
+  cursor: pointer;
+}
+.btn.primary{
+
+background-color: rgb(187, 117, 187);
+color: white;
+height: 35px;
+width: 100px;
+    margin-top: 10px;
+}
+
+.btn.secondary {
+  background-color: rgb(149, 175, 184);
+  color: black;
+  height: 35px;
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 1rem;
+}
+.newComment {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.newComment .labelWrapper{
+  display: flex;
+  justify-content: flex-start;
+  width: fit-content;
+}
+
+.newComment .labelWrapper label{
+padding: 2px;
+width: fit-content;
+}
+.newComment .labelWrapper input {
+  padding: 2px;
+  height: 30px;
+  width: 200px;
+}
+.commentBtn{
+  background-color: lightblue;
+  margin-left: 10px;
+}
+.commentbtn_container{
+  margin-left: 10px;
+}
+.commentbtn_container .btn{
+  width: fit-content;
+  background-color: rgba(0,0,0,0.3);
+  padding: 3px 6px;
+  font-size: smaller;
+  color: rgb(59, 59, 121);
+}
+.replies{
+  margin-left: 2rem;
+  font-size: smaller;
+}
+.editComment{
+  display: flex;
+}
+.editCommmentWrapper{
+  width: fit-content;
+}
+.editCommmentWrapper.small{
+  width: 100px;
+}
+.bySpace{
+  margin-right: 6px;
 }
